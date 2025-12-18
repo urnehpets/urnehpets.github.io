@@ -1,2 +1,2 @@
-# urnehpets.github.io
-Personal website
+# stephenru.xyz
+Static placeholder site (index.html + styles.css).

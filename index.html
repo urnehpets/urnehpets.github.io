@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephen Ru</title>
+
+    <!-- Work Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main class="wrap">
+      <p class="line">
+        <span class="emoji" aria-hidden="true">👋</span>
+        Hey, I’m <strong>stephen</strong>, and this is the home of some of my work.
+      </p>
+
+      <p class="line">I’m fixing it up at the moment - but I’ll be back soon!</p>
+
+      <p class="line">
+        In the meantime, feel free to say hello at
+        <span id="email"></span>
+      </p>
+    </main>
+
+    <script>
+      (function () {
+        const user = "hey";
+        const domain = "stephenru.xyz";
+        const email = `${user}@${domain}`;
+
+        const a = document.createElement("a");
+        a.href = `mailto:${email}`;
+        a.textContent = email;
+
+        document.getElementById("email").appendChild(a);
+      })();
+    </script>
+  </body>
+</html>
